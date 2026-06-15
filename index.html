@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- ============ SEO: this is what helps Google understand the page ============ -->
+<title>Dr. Utsab Ghimire — Scientist & Agricultural Biotechnologist</title>
+<meta name="description" content="Dr. Utsab Ghimire is a plant scientist working at the intersection of molecular biology and data science — CRISPR gene editing, plant transformation, multi-omics, and machine learning for more resilient crops. PhD, University of Florida." />
+<meta name="author" content="Utsab Ghimire" />
+<link rel="canonical" href="https://REPLACE-WITH-YOUR-DOMAIN.com/" />
+
+<!-- Open Graph / social previews -->
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Dr. Utsab Ghimire — Scientist & Agricultural Biotechnologist" />
+<meta property="og:description" content="Bridging the wet lab and the command line to build more resilient crops. CRISPR, multi-omics, and machine learning in plant science." />
+<meta property="og:url" content="https://REPLACE-WITH-YOUR-DOMAIN.com/" />
+<meta property="og:image" content="https://REPLACE-WITH-YOUR-DOMAIN.com/preview.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- Structured data: tells search engines exactly who this page is about.
+     Keeping sameAs links here strongly associates the page with your real profiles. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Utsab Ghimire",
+  "honorificPrefix": "Dr.",
+  "jobTitle": "Scientist / Agricultural Biotechnologist",
+  "description": "Plant scientist working at the intersection of molecular biology and data science: CRISPR gene editing, plant transformation, multi-omics, and machine learning.",
+  "email": "utsabghimire02@gmail.com",
+  "worksFor": { "@type": "Organization", "name": "Soilcea (Soil Culture Solutions, LLC)" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "University of Florida" },
+    { "@type": "CollegeOrUniversity", "name": "Agriculture and Forestry University" }
+  ],
+  "knowsAbout": [
+    "CRISPR gene editing",
+    "Agrobacterium-mediated plant transformation",
+    "Postharvest biology and senescence",
+    "Transcriptomics",
+    "Proteomics",
+    "Bioinformatics",
+    "Machine learning"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/utsab-ghimire-543117146",
+    "https://scholar.google.com/citations?user=aF5o5l8AAAAJ&hl=en",
+    "https://github.com/utsabghimire"
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+<style>
+  :root{
+    /* ---- palette: a layered botanical-green world, one live "signal" accent ---- */
+    --canopy:#0c3327;     /* deep forest, dark sections */
+    --canopy-2:#0a2a20;   /* deeper, for gradients */
+    --moss:#1d5b44;       /* mid green */
+    --chloro:#9fe06a;     /* the one bold color: chlorophyll signal */
+    --chloro-dim:#6fae47;
+    --paper:#f4f2e9;      /* warm paper, light sections */
+    --paper-2:#eceae0;
+    --ink:#13231c;        /* green-black text */
+    --stone:#6f7d72;      /* muted sage, meta/captions */
+    --line:rgba(19,35,28,.14);
+    --line-dark:rgba(159,224,106,.18);
+
+    --serif:"Fraunces",Georgia,serif;
+    --sans:"Hanken Grotesk",system-ui,-apple-system,sans-serif;
+    --mono:"JetBrains Mono",ui-monospace,monospace;
+
+    --maxw:1140px;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:var(--sans);
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  ::selection{background:var(--chloro);color:var(--ink)}
+
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+
+  /* ---------- eyebrow / mono labels (the "data voice") ---------- */
+  .eyebrow{
+    font-family:var(--mono);
+    font-size:.72rem;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:var(--chloro-dim);
+    display:inline-flex;align-items:center;gap:.6em;
+  }
+  .eyebrow::before{content:"";width:26px;height:1px;background:var(--chloro-dim);display:inline-block}
+
+  /* ===================== NAV ===================== */
+  nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(12,51,39,.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line-dark);
+  }
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+  .mono-mark{
+    font-family:var(--mono);font-weight:700;color:var(--paper);
+    font-size:1rem;letter-spacing:.04em;display:flex;align-items:center;gap:.5em;
+  }
+  .mono-mark .dot{width:9px;height:9px;border-radius:50%;background:var(--chloro);
+    box-shadow:0 0 0 0 rgba(159,224,106,.6);animation:pulse 2.6s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(159,224,106,.5)}70%{box-shadow:0 0 0 9px rgba(159,224,106,0)}100%{box-shadow:0 0 0 0 rgba(159,224,106,0)}}
+  .nav-links{display:flex;gap:30px;align-items:center}
+  .nav-links a{font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;
+    color:rgba(244,242,233,.72);text-transform:uppercase;transition:color .2s}
+  .nav-links a:hover{color:var(--chloro)}
+  .nav-cta{border:1px solid var(--line-dark);padding:8px 16px;border-radius:2px}
+  .nav-cta:hover{background:var(--chloro);color:var(--ink)!important;border-color:var(--chloro)}
+  @media(max-width:720px){.nav-links a:not(.nav-cta){display:none}}
+
+  /* ===================== HERO ===================== */
+  .hero{
+    background:
+      radial-gradient(120% 90% at 80% -10%, rgba(159,224,106,.10), transparent 55%),
+      linear-gradient(180deg,var(--canopy),var(--canopy-2));
+    color:var(--paper);position:relative;overflow:hidden;
+    padding:84px 0 0;
+  }
+  .hero-grid{display:grid;grid-template-columns:1.55fr .9fr;gap:48px;align-items:center}
+  @media(max-width:860px){.hero-grid{grid-template-columns:1fr;gap:36px}}
+
+  .hero h1{
+    font-family:var(--serif);
+    font-weight:380;
+    font-size:clamp(3.2rem,9vw,6.6rem);
+    line-height:.95;
+    letter-spacing:-.02em;
+    margin:18px 0 22px;
+  }
+  .hero h1 em{font-style:italic;color:var(--chloro)}
+  .lede{font-family:var(--serif);font-style:italic;font-weight:300;
+    font-size:clamp(1.25rem,2.4vw,1.7rem);color:#dfe7da;max-width:30ch;line-height:1.3;margin-bottom:24px}
+  .hero p.intro{font-size:1.02rem;color:rgba(244,242,233,.82);max-width:48ch;margin-bottom:32px}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{font-family:var(--mono);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;
+    padding:13px 22px;border-radius:2px;transition:.2s;border:1px solid transparent}
+  .btn-solid{background:var(--chloro);color:var(--ink)}
+  .btn-solid:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(159,224,106,.25)}
+  .btn-ghost{border-color:var(--line-dark);color:var(--paper)}
+  .btn-ghost:hover{border-color:var(--chloro);color:var(--chloro)}
+
+  /* portrait — polished monogram now; swap in a photo whenever you like (see comment below) */
+  .portrait{position:relative;aspect-ratio:4/5;border-radius:4px;overflow:hidden;
+    border:1px solid var(--line-dark);
+    background:
+      repeating-linear-gradient(135deg,rgba(159,224,106,.05) 0 2px,transparent 2px 9px),
+      linear-gradient(160deg,#16463540,#0a2a20);
+    display:flex;align-items:center;justify-content:center;}
+  .portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .portrait .mono-init{font-family:var(--serif);font-size:7rem;color:var(--chloro);opacity:.9;font-weight:300}
+  .portrait .tag{position:absolute;left:12px;bottom:12px;font-family:var(--mono);
+    font-size:.62rem;letter-spacing:.12em;color:rgba(244,242,233,.7);
+    background:rgba(10,42,32,.6);padding:5px 9px;border-radius:2px;backdrop-filter:blur(4px)}
+  @media(max-width:860px){.portrait{max-width:300px;margin:0 auto}}
+  @supports not (aspect-ratio:4/5){.portrait{height:520px}.grad img{height:340px}}
+
+  /* ---------- signature: the living sequence track ---------- */
+  .track{margin-top:64px;border-top:1px solid var(--line-dark);
+    font-family:var(--mono);font-size:.86rem;letter-spacing:.18em;
+    color:rgba(159,224,106,.35);white-space:nowrap;overflow:hidden;padding:14px 0 30px}
+  .track .base.hit{color:var(--chloro);text-shadow:0 0 10px rgba(159,224,106,.5)}
+  .track-row{display:inline-block;animation:slide 60s linear infinite}
+  @keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  /* divider strip reused between light sections */
+  .strip{background:var(--canopy);overflow:hidden;border-block:1px solid var(--line-dark)}
+  .strip-row{display:inline-block;white-space:nowrap;font-family:var(--mono);
+    font-size:.74rem;letter-spacing:.2em;color:rgba(159,224,106,.4);
+    padding:10px 0;animation:slide 48s linear infinite}
+  .strip-row span{margin:0 26px;text-transform:uppercase}
+
+  /* ===================== sections ===================== */
+  section{padding:96px 0}
+  .sec-head{max-width:60ch;margin-bottom:48px}
+  .sec-head h2{font-family:var(--serif);font-weight:380;font-size:clamp(2rem,4.4vw,3rem);
+    line-height:1.05;letter-spacing:-.01em;margin:16px 0}
+  .sec-head p{color:var(--stone);font-size:1.05rem;max-width:52ch}
+
+  /* about */
+  .about{background:var(--paper)}
+  .about-body{display:grid;grid-template-columns:1.3fr .9fr;gap:56px}
+  @media(max-width:780px){.about-body{grid-template-columns:1fr;gap:34px}}
+  .about-body p{font-size:1.12rem;margin-bottom:20px;color:#283a31}
+  .about-body p:first-child::first-letter{font-family:var(--serif);font-size:3.4rem;
+    float:left;line-height:.8;padding:6px 12px 0 0;color:var(--moss)}
+  .facts{font-family:var(--mono);font-size:.82rem;border-top:1px solid var(--line)}
+  .facts div{display:flex;justify-content:space-between;gap:16px;padding:13px 0;
+    border-bottom:1px solid var(--line)}
+  .facts span:first-child{color:var(--stone);letter-spacing:.06em;text-transform:uppercase;font-size:.72rem}
+  .facts span:last-child{text-align:right;color:var(--ink);font-weight:500}
+
+  /* focus cards */
+  .focus{background:var(--canopy);color:var(--paper)}
+  .focus .sec-head h2{color:var(--paper)}
+  .focus .sec-head p{color:rgba(244,242,233,.7)}
+  .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line-dark);
+    border:1px solid var(--line-dark)}
+  @media(max-width:680px){.cards{grid-template-columns:1fr}}
+  .card{background:var(--canopy);padding:34px 30px;transition:background .25s}
+  .card:hover{background:#0e3b2d}
+  .card .num{font-family:var(--mono);font-size:.72rem;color:var(--chloro-dim);letter-spacing:.1em}
+  .card h3{font-family:var(--serif);font-weight:400;font-size:1.5rem;margin:14px 0 10px}
+  .card p{color:rgba(244,242,233,.72);font-size:.96rem}
+  .card .tags{margin-top:16px;display:flex;flex-wrap:wrap;gap:7px}
+  .card .tags i{font-family:var(--mono);font-style:normal;font-size:.68rem;
+    color:var(--chloro);border:1px solid var(--line-dark);padding:3px 9px;border-radius:2px}
+
+  /* publications */
+  .pubs{background:var(--paper)}
+  .pub{display:grid;grid-template-columns:90px 1fr auto;gap:24px;align-items:start;
+    padding:26px 0;border-top:1px solid var(--line);transition:.2s}
+  .pub:last-child{border-bottom:1px solid var(--line)}
+  .pub:hover{padding-left:8px}
+  .pub .yr{font-family:var(--mono);font-size:1.1rem;color:var(--moss);font-weight:500}
+  .pub h3{font-family:var(--serif);font-weight:400;font-size:1.22rem;line-height:1.3;margin-bottom:8px}
+  .pub .meta{font-family:var(--mono);font-size:.76rem;color:var(--stone);letter-spacing:.03em}
+  .pub .doi{font-family:var(--mono);font-size:.74rem;color:var(--moss);white-space:nowrap;
+    border:1px solid var(--line);padding:6px 12px;border-radius:2px;transition:.2s;align-self:center}
+  .pub .doi:hover{background:var(--moss);color:var(--paper);border-color:var(--moss)}
+  @media(max-width:680px){.pub{grid-template-columns:1fr;gap:8px}.pub .doi{justify-self:start;margin-top:6px}}
+
+  /* code / repos */
+  .code{background:var(--canopy);color:var(--paper)}
+  .code .sec-head h2{color:var(--paper)}
+  .code .sec-head p{color:rgba(244,242,233,.7)}
+  .repos{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  @media(max-width:680px){.repos{grid-template-columns:1fr}}
+  .repo{border:1px solid var(--line-dark);border-radius:3px;padding:22px 22px;
+    background:rgba(159,224,106,.03);transition:.22s;display:block}
+  .repo:hover{transform:translateY(-3px);border-color:var(--chloro);background:rgba(159,224,106,.07)}
+  .repo .rname{font-family:var(--mono);font-weight:500;color:var(--chloro);font-size:.95rem;
+    display:flex;align-items:center;gap:8px;word-break:break-word}
+  .repo .rname::before{content:"›";color:var(--chloro-dim)}
+  .repo p{color:rgba(244,242,233,.72);font-size:.9rem;margin-top:10px}
+  .repo .lang{font-family:var(--mono);font-size:.68rem;color:var(--stone);
+    letter-spacing:.08em;margin-top:14px;text-transform:uppercase}
+  .toolbox{margin-top:40px;display:flex;flex-wrap:wrap;gap:8px}
+  .toolbox i{font-family:var(--mono);font-style:normal;font-size:.74rem;color:rgba(244,242,233,.8);
+    border:1px solid var(--line-dark);padding:7px 13px;border-radius:2px}
+
+  /* experience timeline */
+  .exp{background:var(--paper)}
+  .timeline{border-left:1px solid var(--line);margin-left:6px}
+  .tl{position:relative;padding:0 0 44px 36px}
+  .tl:last-child{padding-bottom:0}
+  .tl::before{content:"";position:absolute;left:-6px;top:6px;width:11px;height:11px;border-radius:50%;
+    background:var(--paper);border:2px solid var(--moss)}
+  .tl.now::before{background:var(--chloro);border-color:var(--chloro);box-shadow:0 0 0 4px rgba(159,224,106,.18)}
+  .tl .when{font-family:var(--mono);font-size:.74rem;letter-spacing:.06em;color:var(--moss);text-transform:uppercase}
+  .tl h3{font-family:var(--serif);font-weight:430;font-size:1.4rem;margin:6px 0 2px;line-height:1.2}
+  .tl .where{font-family:var(--mono);font-size:.78rem;color:var(--stone);margin-bottom:12px}
+  .tl ul{list-style:none}
+  .tl ul li{position:relative;padding-left:18px;color:#33453b;font-size:.98rem;margin-bottom:8px}
+  .tl ul li::before{content:"›";position:absolute;left:0;color:var(--chloro-dim)}
+  .edu-head{font-family:var(--mono);font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--stone);margin:14px 0 26px 6px;padding-top:40px;border-top:1px solid var(--line)}
+  .edu{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+  @media(max-width:680px){.edu{grid-template-columns:1fr}}
+  .edu .e{border-top:2px solid var(--moss);padding-top:14px}
+  .edu .e .when{font-family:var(--mono);font-size:.74rem;color:var(--moss);text-transform:uppercase}
+  .edu .e h4{font-family:var(--serif);font-weight:430;font-size:1.18rem;margin:6px 0 4px}
+  .edu .e p{color:var(--stone);font-size:.92rem}
+
+  /* presentations / teaching */
+  .more-bg{background:var(--paper-2)}
+  .three{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+  @media(max-width:760px){.three{grid-template-columns:1fr;gap:28px}}
+  .col h3{font-family:var(--mono);font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--moss);padding-bottom:12px;margin-bottom:14px;border-bottom:1px solid var(--line)}
+  .col ul{list-style:none}
+  .col ul li{font-size:.96rem;color:#33453b;padding:7px 0;border-bottom:1px solid var(--line)}
+  .col ul li b{font-weight:600;color:var(--ink)}
+  .col ul li:last-child{border-bottom:none}
+
+  /* graduation strip */
+  .grad{background:var(--canopy);padding:70px 0}
+  .grad .eyebrow{justify-content:center;margin-bottom:30px;width:100%;text-align:center}
+  .grad .row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  @media(max-width:820px){.grad .row{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:460px){.grad .row{grid-template-columns:1fr}}
+  .grad img{border-radius:3px;aspect-ratio:4/5;object-fit:cover;width:100%;
+    border:1px solid var(--line-dark);filter:saturate(1.02)}
+  .grad .cap{text-align:center;font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;
+    color:rgba(159,224,106,.55);text-transform:uppercase;margin-top:24px}
+
+  /* contact */
+  .contact{background:linear-gradient(180deg,var(--canopy-2),#081e16);color:var(--paper);text-align:center}
+  .contact h2{font-family:var(--serif);font-weight:360;font-size:clamp(2.4rem,6vw,4.5rem);
+    line-height:1;letter-spacing:-.02em;margin:18px auto 28px;max-width:16ch}
+  .contact h2 em{font-style:italic;color:var(--chloro)}
+  .contact .email{font-family:var(--mono);font-size:clamp(1rem,3vw,1.4rem);color:var(--chloro);
+    border-bottom:1px solid var(--line-dark);padding-bottom:6px;transition:.2s}
+  .contact .email:hover{border-color:var(--chloro)}
+  .social{display:flex;gap:14px;justify-content:center;margin-top:42px;flex-wrap:wrap}
+  .social a{font-family:var(--mono);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;
+    border:1px solid var(--line-dark);padding:12px 22px;border-radius:2px;transition:.2s}
+  .social a:hover{border-color:var(--chloro);color:var(--chloro);transform:translateY(-2px)}
+
+  footer{background:#081e16;color:rgba(244,242,233,.45);font-family:var(--mono);
+    font-size:.72rem;text-align:center;padding:30px 0;letter-spacing:.05em;
+    border-top:1px solid var(--line-dark)}
+
+  /* reveal on scroll */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  :focus-visible{outline:2px solid var(--chloro);outline-offset:3px}
+  @media(prefers-reduced-motion:reduce){
+    *{animation:none!important;scroll-behavior:auto!important;transition:none!important}
+    .reveal{opacity:1;transform:none}
+  }
+</style>
+<noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#top" class="mono-mark"><span class="dot"></span>DR.&nbsp;UTSAB&nbsp;GHIMIRE</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#work">Publications</a>
+      <a href="#code">Code</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">Plant Biotechnology · Genome Editing · Multi-omics</span>
+        <h1>Dr. Utsab<br>Ghimire<em>.</em></h1>
+        <p class="lede">Bridging the wet lab and the command line to build more resilient crops.</p>
+        <p class="intro">I'm a plant scientist working where molecular biology meets data science. I develop transgene-free, gene-edited crops and use CRISPR, multi-omics, and machine learning to understand how plants grow, age, and defend themselves — then turn that into traits that matter in the field.</p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-solid">View research</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+
+      <!-- PORTRAIT — lab photo. The file portrait.jpg must sit next to this index.html. -->
+      <div class="portrait">
+        <img src="portrait.jpg" alt="Dr. Utsab Ghimire in a lab coat in front of a plant tissue-culture rack" />
+        <span class="tag">DR. UTSAB GHIMIRE · IN THE LAB</span>
+      </div>
+    </div>
+
+    <!-- signature: living sequence track (genome-browser readout) -->
+    <div class="track" aria-hidden="true"><div class="track-row" id="trackRow"></div></div>
+  </div>
+</header>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">About</span>
+      <h2>A scientist comfortable at the bench and in the terminal.</h2>
+      <p>Most problems in crop biology don't sit neatly on one side of that line — so I try not to either.</p>
+    </div>
+    <div class="about-body">
+      <div class="reveal">
+        <p>My work lives at the intersection of molecular biology and computation. On the bench, I run CRISPR gene editing and Agrobacterium-mediated transformation to develop gene-edited plants — including work on disease-resistant citrus. At the keyboard, I integrate high-throughput sequencing, proteomics, and metabolomics, and build predictive models with machine learning.</p>
+        <p>My doctoral research, completed at the University of Florida, focused on the gene regulatory networks behind senescence and stress responses in plants — asking why crops like broccoli decline so fast after harvest, and what we can do about it. That same question — how do we keep more of what we grow? — still drives the applied, food-security framing of everything I work on.</p>
+        <p>I care about reproducible science: open code, documented pipelines, and results that hold up.</p>
+      </div>
+      <div class="reveal">
+        <div class="facts">
+          <div><span>Role</span><span>Scientist, Soilcea</span></div>
+          <div><span>Field</span><span>Agricultural biotech</span></div>
+          <div><span>PhD</span><span>Horticultural Sciences</span></div>
+          <div><span>University</span><span>Univ. of Florida</span></div>
+          <div><span>Based in</span><span>Tampa, Florida</span></div>
+          <div><span>Focus</span><span>CRISPR · Multi-omics · ML</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- moving divider strip -->
+<div class="strip" aria-hidden="true"><div class="strip-row">
+  <span>CRISPR</span><span>Transcriptomics</span><span>Plant Transformation</span><span>Proteomics</span><span>Bioinformatics</span><span>Machine Learning</span><span>Senescence</span><span>Genome Editing</span>
+  <span>CRISPR</span><span>Transcriptomics</span><span>Plant Transformation</span><span>Proteomics</span><span>Bioinformatics</span><span>Machine Learning</span><span>Senescence</span><span>Genome Editing</span>
+</div></div>
+
+<!-- ===================== EXPERIENCE ===================== -->
+<section class="exp" id="experience">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Experience</span>
+      <h2>From the postharvest lab to the citrus grove.</h2>
+      <p>A path through academic research, federal science, and agricultural biotech.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="tl now reveal">
+        <div class="when">Jan 2026 — Present</div>
+        <h3>Scientist · Soilcea (Soil Culture Solutions, LLC)</h3>
+        <div class="where">Tampa, Florida</div>
+        <ul>
+          <li>Develop transgene-free, CRISPR-edited citrus rootstocks for resistance to Huanglongbing (citrus greening) via Agrobacterium-mediated transformation.</li>
+          <li>Build and run genomics pipelines for edited lines — whole-genome sequencing, BWA-MEM alignment, variant calling, and CRISPR on/off-target and transgene-integration analysis.</li>
+          <li>Optimize tissue culture and regeneration across citrus rootstocks (Carrizo, Swingle, US-812), including contamination control and germination workflows.</li>
+          <li>Maintain reproducible multi-omics workflows on a dedicated Linux genomics workstation, with SOPs, plasmid maps, and genotyping records.</li>
+        </ul>
+      </div>
+
+      <div class="tl reveal">
+        <div class="when">Jan 2022 — Dec 2025</div>
+        <h3>Graduate Research Assistant · Postharvest Genomics Lab</h3>
+        <div class="where">University of Florida · Gainesville, Florida</div>
+        <ul>
+          <li>Engineered Dex-inducible (pJAN33-GR) and 35S overexpression constructs; designed gRNAs and Gateway cloning strategies for target genes.</li>
+          <li>Established Agrobacterium-mediated transformation in broccoli and lettuce, optimizing tissue culture and regeneration to ~28% transformation efficiency in broccoli.</li>
+          <li>Built bulk RNA-seq, proteomics, and metabolomics pipelines — plus single-nuclei RNA-seq — to identify and resolve senescence regulators across cell types.</li>
+          <li>Developed large-scale HPC workflows on UF HiPerGator and interactive Streamlit apps for volcano plots, Venn diagrams, and pathway enrichment.</li>
+        </ul>
+      </div>
+
+      <div class="tl reveal">
+        <div class="when">May 2025 — Aug 2025</div>
+        <h3>AI/ML Intern · USDA-ARS SCINet / AI Center of Excellence</h3>
+        <div class="where">Adaptive Cropping Systems Laboratory · Beltsville, Maryland</div>
+        <ul>
+          <li>Developed machine-learning models (CatBoost, XGBoost, scikit-learn) for biological yield prediction, improving accuracy ~10% through feature engineering and multi-environment variables.</li>
+          <li>Applied deep learning (TensorFlow, PyTorch) and parallelized workflows on SCINet HPC, cutting compute time ~40%.</li>
+          <li>Resulting work was published in <em>Agricultural &amp; Environmental Letters</em> (2026) and featured in the USDA SCINet newsletter.</li>
+        </ul>
+      </div>
+
+      <div class="tl reveal">
+        <div class="when">Apr 2021 — Nov 2021</div>
+        <h3>Agriculture Technician · Sappros Nepal</h3>
+        <div class="where">Support Activities for Poor Producers of Nepal · Setī, Nepal</div>
+        <ul>
+          <li>Provided field-level agricultural support to smallholder producers, including on-site training, data collection, and reporting.</li>
+        </ul>
+      </div>
+
+      <div class="tl reveal">
+        <div class="when">Mar 2021 — Apr 2021</div>
+        <h3>Enumerator · CIMMYT</h3>
+        <div class="where">International Maize and Wheat Improvement Center · Kosi Zone, Nepal</div>
+        <ul>
+          <li>Conducted field surveys and recorded research data for maize and wheat improvement programs.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="edu-head reveal">Education</div>
+    <div class="edu">
+      <div class="e reveal">
+        <div class="when">Jan 2022 — Dec 2025</div>
+        <h4>PhD, Horticultural Sciences</h4>
+        <p>University of Florida · Gainesville, FL<br>Dissertation: <em>Identification and functional characterization of novel senescence-associated genes in broccoli.</em></p>
+      </div>
+      <div class="e reveal">
+        <div class="when">Dec 2020</div>
+        <h4>B.Sc., Agriculture</h4>
+        <p>Agriculture and Forestry University · Rampur, Nepal</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOCUS ===================== -->
+<section class="focus" id="focus">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Focus</span>
+      <h2>Four threads, one through-line.</h2>
+      <p>From editing a single gene to modeling thousands at once — all aimed at crops that grow stronger and last longer.</p>
+    </div>
+    <div class="cards">
+      <div class="card reveal">
+        <span class="num">/ EDIT</span>
+        <h3>CRISPR &amp; plant transformation</h3>
+        <p>Developing transgene-free, gene-edited plants through CRISPR base editing and Agrobacterium-mediated transformation — including disease-resistant citrus.</p>
+        <div class="tags"><i>CRISPR</i><i>base editing</i><i>tissue culture</i></div>
+      </div>
+      <div class="card reveal">
+        <span class="num">/ AGE</span>
+        <h3>Postharvest biology &amp; senescence</h3>
+        <p>Mapping the molecular and biochemical pathways that drive crops to decline after harvest, to extend shelf life and cut food loss.</p>
+        <div class="tags"><i>physiology</i><i>gene regulation</i><i>shelf life</i></div>
+      </div>
+      <div class="card reveal">
+        <span class="num">/ READ</span>
+        <h3>Multi-omics &amp; bioinformatics</h3>
+        <p>Integrating RNA-seq, single-cell, proteomics, and whole-genome sequencing into pipelines that turn raw reads into biological insight.</p>
+        <div class="tags"><i>RNA-seq</i><i>scRNA-seq</i><i>WGS</i></div>
+      </div>
+      <div class="card reveal">
+        <span class="num">/ PREDICT</span>
+        <h3>Machine learning for crops</h3>
+        <p>Building predictive models — gradient-boosted trees and neural networks — for plant traits, biomass, and the signals hidden in omics data.</p>
+        <div class="tags"><i>XGBoost</i><i>CatBoost</i><i>CNNs</i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PUBLICATIONS ===================== -->
+<section class="pubs" id="work">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Selected work</span>
+      <h2>Peer-reviewed research.</h2>
+      <p>Five published, peer-reviewed studies. Full list on Google Scholar.</p>
+    </div>
+
+    <div class="pub reveal">
+      <div class="yr">2026</div>
+      <div>
+        <h3>Machine learning–based prediction of cereal rye cover crop biomass across diverse agroecosystems</h3>
+        <div class="meta">Ghimire U., Mitra A., Fleisher D., Park J., Barnaby J.Y., Kim Y., Han E. · Agricultural &amp; Environmental Letters 11(1), e70055</div>
+      </div>
+      <a class="doi" href="https://scholar.google.com/citations?user=aF5o5l8AAAAJ&hl=en" target="_blank" rel="noopener">View →</a>
+    </div>
+
+    <div class="pub reveal">
+      <div class="yr">2026</div>
+      <div>
+        <h3>Transcriptomic insights into postharvest senescence in artichoke for enhanced shelf life</h3>
+        <div class="meta">Kaur A., Olmedo G.M., Ghimire U., Wang W., Tseung C., Yu F., Bai J., et al. · Postharvest Biology and Technology 240, 114421</div>
+      </div>
+      <a class="doi" href="https://scholar.google.com/citations?user=aF5o5l8AAAAJ&hl=en" target="_blank" rel="noopener">View →</a>
+    </div>
+
+    <div class="pub reveal">
+      <div class="yr">2024</div>
+      <div>
+        <h3>Unique molecular mechanisms revealed for the effects of temperature, CA, ethylene exposure, and 1-MCP on postharvest senescence of broccoli</h3>
+        <div class="meta">Ghimire U., Abeli P., Brecht J.K., Pliakoni E., Liu T. · Postharvest Biology and Technology 213, 112919</div>
+      </div>
+      <a class="doi" href="https://doi.org/10.1016/j.postharvbio.2024.112919" target="_blank" rel="noopener">DOI →</a>
+    </div>
+
+    <div class="pub reveal">
+      <div class="yr">2024</div>
+      <div>
+        <h3>Postharvest senescence profiling in broccoli using Tandem Mass Tag–based proteomics</h3>
+        <div class="meta">Ahlawat Y.K., Ghimire U., Li S., Timilsena P., Pliakoni E.D., Brecht J.K., Liu T. · Vegetable Research 4(1)</div>
+      </div>
+      <a class="doi" href="https://doi.org/10.48130/vegres-0024-0009" target="_blank" rel="noopener">DOI →</a>
+    </div>
+
+    <div class="pub reveal">
+      <div class="yr">2023</div>
+      <div>
+        <h3>Identifying genes regulated during natural, on-plant senescence in broccoli (Brassica oleracea) in contrast to postharvest senescence</h3>
+        <div class="meta">Ghimire U., Pliakoni E., Yu F., Brecht J.K., Liu T. · Postharvest Biology and Technology 206, 112535</div>
+      </div>
+      <a class="doi" href="https://doi.org/10.1016/j.postharvbio.2023.112535" target="_blank" rel="noopener">DOI →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TALKS / TEACHING ===================== -->
+<section class="more-bg">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Beyond the bench</span>
+      <h2>Talks, teaching &amp; outreach.</h2>
+    </div>
+    <div class="three">
+      <div class="col reveal">
+        <h3>Conferences &amp; workshops</h3>
+        <ul>
+          <li><b>Plant &amp; Animal Genome (PAG32)</b> — poster &amp; oral, 2025</li>
+          <li><b>Plant Cell Atlas Symposium</b> — 2024</li>
+          <li><b>Florida Genetics Symposium</b> — 2023</li>
+          <li><b>ASHS Annual Conference</b> — oral presentations, 2022 &amp; 2023</li>
+        </ul>
+      </div>
+      <div class="col reveal">
+        <h3>Teaching &amp; mentoring</h3>
+        <ul>
+          <li>Mentored <b>six undergraduate researchers</b> (2022–2025) in bioinformatics and molecular biology.</li>
+          <li>Trained students in RNA-seq analysis, molecular cloning, CRISPR/Cas9, and tissue culture.</li>
+        </ul>
+      </div>
+      <div class="col reveal">
+        <h3>Public outreach</h3>
+        <ul>
+          <li><b>UF Finger Lime Field Day</b> — 2025</li>
+          <li><b>UF Extension Passion Fruit Field Day</b> — 2024</li>
+          <li><b>UF Grape Field Day</b> — 2023</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CODE ===================== -->
+<section class="code" id="code">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Code</span>
+      <h2>Open pipelines &amp; analysis.</h2>
+      <p>Reproducible workflows for the analyses behind the research — all public on GitHub.</p>
+    </div>
+    <div class="repos">
+      <a class="repo reveal" href="https://github.com/utsabghimire/broccoli-scRNA-seq" target="_blank" rel="noopener">
+        <span class="rname">broccoli-scRNA-seq</span>
+        <p>Single-cell RNA-seq pipeline for broccoli inflorescences — senescence and developmental trajectories.</p>
+        <div class="lang">● R</div>
+      </a>
+      <a class="repo reveal" href="https://github.com/utsabghimire/bulk-rnaseq-postharvest-pipeline" target="_blank" rel="noopener">
+        <span class="rname">bulk-rnaseq-postharvest-pipeline</span>
+        <p>QC, trimming, alignment, and HPC workflow for bulk RNA-seq from postharvest plant tissue.</p>
+        <div class="lang">● Shell / R</div>
+      </a>
+      <a class="repo reveal" href="https://github.com/utsabghimire/biomass-ml-prediction" target="_blank" rel="noopener">
+        <span class="rname">biomass-ml-prediction</span>
+        <p>ML models for cover-crop biomass and C:N ratio — CatBoost, XGBoost, and neural networks with weather features.</p>
+        <div class="lang">● Python</div>
+      </a>
+      <a class="repo reveal" href="https://github.com/utsabghimire/broccoli-proteomics-senescence" target="_blank" rel="noopener">
+        <span class="rname">broccoli-proteomics-senescence</span>
+        <p>TMT-based proteomics pipeline: preprocessing, PCA, volcano plots, and differential testing.</p>
+        <div class="lang">● Python</div>
+      </a>
+      <a class="repo reveal" href="https://github.com/utsabghimire/rnaseq-interactive-demo" target="_blank" rel="noopener">
+        <span class="rname">rnaseq-interactive-demo</span>
+        <p>Interactive notebook and Streamlit app — RNA-seq from raw data to differential expression.</p>
+        <div class="lang">● Python</div>
+      </a>
+      <a class="repo reveal" href="https://github.com/utsabghimire" target="_blank" rel="noopener">
+        <span class="rname">more on github →</span>
+        <p>Explore the full set of repositories, pipelines, and experiments.</p>
+        <div class="lang">● @utsabghimire</div>
+      </a>
+    </div>
+
+    <div class="toolbox reveal">
+      <i>Python</i><i>R</i><i>Bash</i><i>HPC / Unix</i><i>Docker</i><i>Git</i><i>Seurat</i><i>WGCNA</i><i>scikit-learn</i><i>PyTorch</i><i>BWA</i><i>samtools</i><i>IGV</i>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GRADUATION STRIP ===================== -->
+<section class="grad">
+  <div class="wrap">
+    <span class="eyebrow">Gainesville, 2025</span>
+    <div class="row">
+      <img src="grad-1.jpg" alt="Dr. Utsab Ghimire at the University of Florida arch on graduation day" loading="lazy" />
+      <img src="grad-4.jpg" alt="Dr. Utsab Ghimire in doctoral regalia by the University of Florida Gator statue" loading="lazy" />
+      <img src="grad-3.jpg" alt="Dr. Utsab Ghimire walking through the University of Florida campus in doctoral regalia" loading="lazy" />
+      <img src="grad-2.jpg" alt="Dr. Utsab Ghimire celebrating PhD graduation at the University of Florida" loading="lazy" />
+    </div>
+    <div class="cap">PhD, Horticultural Sciences · University of Florida</div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <span class="eyebrow" style="justify-content:center">Contact</span>
+    <h2>Let's build something that <em>grows.</em></h2>
+    <a class="email" href="mailto:utsabghimire02@gmail.com">utsabghimire02@gmail.com</a>
+    <div class="social">
+      <a href="https://www.linkedin.com/in/utsab-ghimire-543117146" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://scholar.google.com/citations?user=aF5o5l8AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="https://github.com/utsabghimire" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © <span id="yr"></span> UTSAB GHIMIRE · BUILT WITH CODE, COFFEE &amp; CHLOROPHYLL
+</footer>
+
+<script>
+  // --- living sequence track: generate a long run of bases with periodic "edits" ---
+  (function(){
+    var bases="ACGT", out="", row=document.getElementById("trackRow");
+    if(!row) return;
+    var seq="";
+    for(var i=0;i<340;i++){ seq += bases[Math.floor(Math.random()*4)]; }
+    function render(s){
+      var html="";
+      for(var i=0;i<s.length;i++){
+        var hit = (i%17===3); // periodic highlighted "edit" sites
+        html += '<span class="base'+(hit?' hit':'')+'">'+s[i]+'</span>';
+      }
+      return html;
+    }
+    // duplicate so the -50% slide loops seamlessly
+    row.innerHTML = render(seq) + render(seq);
+  })();
+
+  // --- scroll reveal ---
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target);} });
+  },{threshold:.12});
+  document.querySelectorAll(".reveal").forEach(function(el){ io.observe(el); });
+
+  document.getElementById("yr").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
