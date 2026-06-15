@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://utsabghimire.github.io/sitemap.xml
